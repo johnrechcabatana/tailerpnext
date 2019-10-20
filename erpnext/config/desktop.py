@@ -107,8 +107,16 @@ def get_data():
 			"type": "module",
 			"description": "Quality goals, procedures, reviews and action."
 		},
-
-
+		{
+			"module_name": "POS",
+			"category": "Modules",
+			"label": _("POS"),
+			"color": "#1abc9c",
+			"icon": "octicon octicon-credit-card",
+			"type": "page",
+			"link":"desk#point-of-sale",
+		},
+		
 		# Category: "Domains"
 		{
 			"module_name": "Manufacturing",
