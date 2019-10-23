@@ -1047,7 +1047,7 @@
   {
    "fieldname": "size",
    "fieldtype": "Data",
-   "label": "Size",
+   "label": "Size/Dosage",
    "reqd": 1
   }
  ],
@@ -1056,7 +1056,11 @@
  "idx": 2,
  "image_field": "image",
  "max_attachments": 1,
+<<<<<<< HEAD
  "modified": "2019-10-22 15:36:08.269969",
+=======
+ "modified": "2019-10-23 08:48:29.180033",
+>>>>>>> eb6a36a2b8a2a8d263ad4ccef9c536edbd5262e4
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item",

@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
  "autoname": "pos_profile.-POS-CLO-.YYYY.-.#####",
+=======
+ "autoname": "pos_profile.POS-CLO-.YYYY.-.#####",
+>>>>>>> eb6a36a2b8a2a8d263ad4ccef9c536edbd5262e4
  "creation": "2018-05-28 19:06:40.830043",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -211,7 +215,11 @@
   }
  ],
  "is_submittable": 1,
+<<<<<<< HEAD
  "modified": "2019-10-22 15:17:23.149820",
+=======
+ "modified": "2019-10-22 15:08:29.248743",
+>>>>>>> eb6a36a2b8a2a8d263ad4ccef9c536edbd5262e4
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "POS Closing Voucher",
