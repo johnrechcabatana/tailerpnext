@@ -41,7 +41,7 @@ def get_items(start, page_length, price_list, item_group, search_value="", pos_p
 	result = []
 
 	items_data = frappe.db.sql(""" SELECT name as item_code,
-			item_name, image as item_image, idx as idx,is_stock_item,end_of_life,strength,item_type,size,shelf_area
+			item_name, image as item_image, idx as idx,is_stock_item,end_of_life,item_type,size,shelf_area
 		FROM
 			`tabItem`
 		WHERE
