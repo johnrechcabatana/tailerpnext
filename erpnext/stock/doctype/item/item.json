@@ -188,6 +188,19 @@
    "search_index": 1
   },
   {
+   "fieldname": "item_type",
+   "fieldtype": "Select",
+   "label": "Item Type",
+   "options": "\nLiquid\nTablet\nCapsules\nTopical Medicine\nSuppositories\nDrops\nInhalers\nInjection\nImplant or patches\nBuccal",
+   "reqd": 1
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "label": "Dosage/Size",
+   "reqd": 1
+  },
+  {
    "fieldname": "item_group",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -287,6 +300,20 @@
    "fieldname": "asset_naming_series",
    "fieldtype": "Select",
    "label": "Asset Naming Series"
+  },
+  {
+   "depends_on": "eval:!doc.__islocal",
+   "fieldname": "over_delivery_receipt_allowance",
+   "fieldtype": "Float",
+   "label": "Over Delivery/Receipt Allowance (%)",
+   "oldfieldname": "tolerance",
+   "oldfieldtype": "Currency"
+  },
+  {
+   "depends_on": "eval:!doc.__islocal",
+   "fieldname": "over_billing_allowance",
+   "fieldtype": "Float",
+   "label": "Over Billing Allowance (%)"
   },
   {
    "fieldname": "image",
@@ -1022,33 +1049,6 @@
    "fieldtype": "Table",
    "label": "Manufacturers",
    "options": "Item Manufacturer"
-  },
-  {
-   "depends_on": "eval:!doc.__islocal",
-   "fieldname": "over_delivery_receipt_allowance",
-   "fieldtype": "Float",
-   "label": "Over Delivery/Receipt Allowance (%)",
-   "oldfieldname": "tolerance",
-   "oldfieldtype": "Currency"
-  },
-  {
-   "depends_on": "eval:!doc.__islocal",
-   "fieldname": "over_billing_allowance",
-   "fieldtype": "Float",
-   "label": "Over Billing Allowance (%)"
-  },
-  {
-   "fieldname": "item_type",
-   "fieldtype": "Select",
-   "label": "Item Type",
-   "options": "\nLiquid\nTablet\nCapsules\nTopical Medicine\nSuppositories\nDrops\nInhalers\nInjection\nImplant or patches\nBuccal",
-   "reqd": 1
-  },
-  {
-   "fieldname": "size",
-   "fieldtype": "Data",
-   "label": "Size/Dosage",
-   "reqd": 1
   }
  ],
  "has_web_view": 1,
@@ -1056,15 +1056,7 @@
  "idx": 2,
  "image_field": "image",
  "max_attachments": 1,
-<<<<<<< HEAD
-<<<<<<< HEAD
- "modified": "2019-10-22 15:36:08.269969",
-=======
- "modified": "2019-10-23 08:48:29.180033",
->>>>>>> eb6a36a2b8a2a8d263ad4ccef9c536edbd5262e4
-=======
- "modified": "2019-10-23 08:48:29.180033",
->>>>>>> eb6a36a2b8a2a8d263ad4ccef9c536edbd5262e4
+ "modified": "2019-10-23 09:19:16.637238",
  "modified_by": "Administrator",
  "module": "Stock",
  "name": "Item",
