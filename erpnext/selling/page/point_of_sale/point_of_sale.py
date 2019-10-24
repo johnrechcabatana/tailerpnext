@@ -47,7 +47,8 @@ def get_items(start, page_length, price_list, item_group, search_value="", pos_p
 		WHERE
 			disabled = 0 and has_variants = 0 and is_sales_item = 1
 			and item_group in (select name from `tabItem Group` where lft >= {lft} and rgt <= {rgt})
-			and {condition} order by idx desc limit {start}, {page_length}"""
+			and {condition} order by idx desc limit 20"""
+			# and {condition} order by idx desc limit {start}, {page_length}
 		.format(
 			start=start, page_length=page_length,
 			lft=lft, rgt=rgt,
